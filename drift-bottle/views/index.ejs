@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      form > input {
+        width: 400px;
+      }
+    </style>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <form action="/throw" method="post">
+      <input type="text" name="username" placeholder="请输入用户名">
+      <div>
+        <input type="radio" name="type" value="male">男
+        <input type="radio" name="type" value="female">女
+      </div>
+      <input type="text" name="content" placeholder="请输入漂流瓶内容">
+      <input type="submit" value="提交">
+    </form>
+</body>
+</html>
